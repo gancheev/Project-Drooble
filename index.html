@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Video Pop-up</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/leanbackPlayer.default.css" />
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <a href="#video-pop-up" class="btn btn-primary btn-lg center-block mtop" data-toggle="modal">Open video pop-up</a>
+        </div>
+
+        <div class="fade modal mtop modalContainer" id="video-pop-up" tabindex="-1" role="dialog" aria-hidden="true">
+           
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <a href="#" class="btn-danger pull-right"><i class="fa fa-close"></i></a>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-11">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <div class="video-container">
+                                    <div id="player">
+                                        <iframe id="VideoPlayer" width="100%" height="315"
+                                                src="http://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+                                    </div>
+                                    <div class="buttons">
+
+                                        <a href="#" class="btn btn-default noborder" id="btnLikeVideo"><i class="fa fa-heart"></i> Like</a>
+                                        <a href="#" class="btn btn-default noborder"><i class="fa fa-share-alt"></i> Share</a>
+                                        <a href="#" class="btn btn-danger pull-right noborder delete-button text-uppercase">Delete</a>
+                                        <a href="#" class="btn btn-success pull-right noborder edit-button text-uppercase">Edit</a>
+
+                                    </div>
+                                    <form role="form">
+                                        <div class="form-group mtop">
+                                            <input type="text" class="form-control" id="comment" placeholder="comment..">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <div class="comment-author">
+                                    <img class="pull-left img-circle img-responsive" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7U3XsCRG4hr8Q47vRxlBLZjPFamKvL1FJJoeGBDA96d4a9XqUpQ" />
+                                    <h3 class="text-primary">Stoqn Daskaloff</h3>
+                                    <span class="text-muted"> March 7, 2003 AT 17:34 PM</span>
+                                    <br /><br /><br />
+                                </div>
+
+                                <div class="comment-content">
+                                    <div class="bs-callout bs-callout-primary">
+                                        <p>
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                        </p>
+
+                                        <div class="buttons mtop" id="nextCom">
+                                            <a href="#" class="btn btn-default noborder"><i class="fa fa-heart-o"> Like</i></a>
+                                            <a href="#" class="btn btn-default noborder"><i class="fa fa-share-alt"> Share</i></a>
+                                            <a href="#" class="btn btn-default noborder"><i class="fa fa-comment"> Comment</i></a>
+                                            <a href="#" class="btn btn-default pull-right noborder"><i class="fa fa-flag-o"> Report</i></a>
+
+                                            <div class="comment-reply mtop">
+                                                <div class="buttons-reply">
+                                                    <a href="#" class="text-uppercase text-muted">Comment</a>
+                                                    <a href="#" class="text-uppercase text-muted">Photo</a>
+                                                    <a href="#" class="text-uppercase text-muted">Feedback</a>
+                                                </div>
+                                                <form role="form">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="comment-reply" placeholder="reply..">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.row -->
+    <script type="text/javascript" src="js/leanbackPlayer.pack.js"></script>
+    <script type="text/javascript" src="js/leanbackPlayer.en.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
